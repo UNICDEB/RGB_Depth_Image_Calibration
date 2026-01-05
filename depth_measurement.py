@@ -50,6 +50,11 @@ def mouse_callback(event, x, y, flags, param):
     Y = (y - rs_intrinsics.ppy) * Z / rs_intrinsics.fy
 
     print(f"📍 Pixel: ({x},{y}) → XYZ = ({X:.3f}, {Y:.3f}, {Z:.3f}) meters")
+    print("-----------------------------")
+    print("ppx", rs_intrinsics.ppx)
+    print("ppy", rs_intrinsics.ppy)
+    print("fx", rs_intrinsics.fx)
+    print("fy", rs_intrinsics.fy)
 
 # ==============================
 # OPEN EXTERNAL RGB CAMERA
